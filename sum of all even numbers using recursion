@@ -1,0 +1,14 @@
+#include<stdio.h>
+int SumEven(int a, int b)
+{
+   if(a>b)
+    return 0;
+return a+SumEven(a+2,b);
+}
+int main()
+{
+    int a=2,b;
+    printf("Enter your Limit:");
+    scanf("%d",&b);
+    printf("Sum of all Even numbers in the given range is: %d",SumEven(a,b));
+}
